@@ -21,28 +21,28 @@ header {
 }
   
 .left-side {
-background: green;
-grid-column: 1 / 2;
+    background: green;
+    grid-column: 1 / 2;
 }
 
 main {
-background: rgb(43, 68, 51);
-grid-column: 2 / 3;
+    background: rgb(43, 68, 51);
+    grid-column: 2 / 3;
 }
 
 .right-side {
-background: greenyellow;
-grid-column: 3 / 4;
+    background: greenyellow;
+    grid-column: 3 / 4;
 }
 
 footer {
-background: rgb(61, 221, 194);
-padding: 2rem;
-text-align: center;
-grid-column: 1 / 4;
+    background: rgb(61, 221, 194);
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
 }
 
 .left-side,
 .right-side {
-padding: 1rem;
+    padding: 1rem;
 }
