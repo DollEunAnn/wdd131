@@ -9,36 +9,40 @@ body {
     grid-template: auto 1fr auto / 300px 1fr auto;
   }
   
-  header {
-    background: lightpink;
+header {
+    background: lightgreen;
     padding: 2rem;
     grid-column: 1 / 4;
-  }
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: space-evenly;
+}
   
-  .left-side {
-    background: lightblue;
-    grid-column: 1 / 2;
-  }
-  
-  main {
-    background: coral;
-    grid-column: 2 / 3;
-  }
-  
-  .right-side {
-    background: yellow;
-    grid-column: 3 / 4;
-  }
-  
-  footer {
-    background: wheat;
-    padding: 2rem;
-    text-align: center;
-    grid-column: 1 / 4;
-  }
-  
-  .left-side,
-  .right-side {
-    padding: 1rem;
-  }
-  
+.left-side {
+background: green;
+grid-column: 1 / 2;
+}
+
+main {
+background: rgb(43, 68, 51);
+grid-column: 2 / 3;
+}
+
+.right-side {
+background: greenyellow;
+grid-column: 3 / 4;
+}
+
+footer {
+background: rgb(61, 221, 194);
+padding: 2rem;
+text-align: center;
+grid-column: 1 / 4;
+}
+
+.left-side,
+.right-side {
+padding: 1rem;
+}
