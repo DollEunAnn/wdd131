@@ -49,6 +49,7 @@ main {
     flex-flow: row wrap;
     padding: 10px;
     justify-content: center;
+    max-width: 100%;
 }
 
 .card {
