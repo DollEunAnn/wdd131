@@ -3,9 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Fundamentals - Eunice Ann Dollete</title>
+    <meta name="author" content="Eunice Ann Dollete" />
+    <meta
+      name="description"
+      content="WDD 131 - Dynamic Fundamentals - Eunice Ann Dollete - Home"
+    />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="scripts/getdates.js"></script>
   </head>
   <body>
-    <h2 style="color: green">Hello World!</h2>
+    <header>
+      <h1 class="header-title">
+        WDD 131: Dynamic Web Fundamentals - Eunice Ann Dollete
+      </h1>
+      <nav class="navigation-links">
+        <a href="https://www.linkedin.com/in/eahdollete/">LinkedIn</a>
+        <a href="https://byui.instructure.com/">I-Learn</a>
+        <a
+          href="https://www.churchofjesuschrist.org/study/scriptures/bofm/moro/7?lang=eng&id=p48#p48"
+          >Scripture</a
+        >
+        <a href="#">Final Project</a>
+      </nav>
+    </header>
+    <main>
+      <section class="card">
+        <h1 class="card-title">About Me</h1>
+        <div class="card-content">
+          <p>
+            I'm Eunice Ann. I'm currenlty a full-time working employee and a BYU
+            Pathway Student. I love playing video games on weekends with my
+            family. I play the piano at church every Sunday. I like riding
+            airplanes and seeing clouds up in the air.
+          </p>
+          <img
+            src="images/eun.jpg"
+            alt="webpage-owner-profile-picture"
+            class="card-img-profile"
+          />
+        </div>
+        <div class="text-center">
+          <h2 class="border-bottom">Capiz, Philippines</h2>
+        </div>
+        <div class="card-content">
+          <img
+            src="images/philippine-flag.png"
+            alt="flag_of_the_philippines"
+            class="card-img-flag"
+          />
+          <p>
+            Capiz is a province in the Western Visayas region that is home to
+            Roxas City, also known as the Seafood Capital of the Philippines.
+            Aside from the mouthwatering seafood dishes, Capiz also boasts of
+            enchanting caves, historical landmarks, and beaches that will
+            fulfill your wanderlust.
+          </p>
+        </div>
+      </section>
+      <section class="card">
+        <h1 class="card-title">Web Dev Resources</h1>
+        <div class="card-content center">
+          <ul class="card-list">
+            <li>
+              <a href="https://htmlreference.io/">HTML Reference</a>
+            </li>
+            <li><a href="https://cssreference.io/">CSS Reference</a></li>
+            <li>
+              <a href="https://www.linkedin.com/learning">LinkedIn Learning</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© <span id="currentyear"></span> Eunice Ann Dollete - Philippines</p>
+      <p id="lastModified"></p>
+    </footer>
   </body>
 </html>
