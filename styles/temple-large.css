@@ -1,7 +1,28 @@
-@media screen and (min-width: 500px)
-{
+@media screen and (min-width: 740px) {
     .hamburger {
         display: none;
     }
+
+    header {
+        background-color: var(--green);
+        color: white;
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    header>h1 {
+        padding: 0;
+    }
+
 
 }
