@@ -24,5 +24,9 @@
         padding: 0;
     }
 
+    .container {
+        grid-template-columns: repeat(3, minmax(200px, 2fr));
+    }
+
 
 }
