@@ -3,7 +3,8 @@
     padding: 0;
 }
 
-html, body {
+html,
+body {
     height: 100%;
 }
 
@@ -26,13 +27,13 @@ nav {
     padding: 1rem;
 }
 
-nav > a {
+nav>a {
     color: white;
     text-decoration-line: none;
     padding: 1rem;
 }
 
-nav > a:hover {
+nav>a:hover {
     color: #000;
     background-color: white;
     text-decoration-line: underline;
@@ -59,12 +60,12 @@ figure {
     background-color: #fff;
 }
 
-figure > img { 
-    width: 100%; 
+figure>img {
+    width: 100%;
     height: auto;
 }
 
-figure > figcaption {
+figure>figcaption {
     text-align: center;
     font-size: smaller;
 }
@@ -93,3 +94,20 @@ footer p {
     margin-bottom: 2rem;
 }
 
+/* mobile view */
+@media screen and (max-width: 768px) {
+
+    /* checker if i'm indeed in mobile */
+    header {
+        border: 2px red solid;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+}
