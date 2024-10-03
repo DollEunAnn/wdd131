@@ -1,0 +1,47 @@
+/* Base Layout - Place Header and Footer at the top and bottom of the page respectively. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: "Urbanist", system-ui;
+    min-height: 100vh;
+}
+
+header {
+    /* background-color: var(--red); */
+    color: var(--red);
+}
+
+header>h1 {
+    display: flex;
+    padding: 2rem;
+}
+
+main {
+    flex: 1;
+    justify-content: center;
+    /* margin: 0 auto; */
+    /* padding: 2rem; */
+}
+
+
+/* footer */
+footer {
+    color: var(--red);
+    padding: 2rem;
+    text-align: center;
+    font-size: small;
+}
+
+footer p {
+    font-weight: 500;
+}

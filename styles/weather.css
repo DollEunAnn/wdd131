@@ -1,0 +1,18 @@
+:root {
+    --red: red;
+}
+
+.hero {
+    background-color: var(--red);
+}
+
+
+
+/* Add Ons*/
+.font-bold {
+    font-weight: bold;
+}
+
+footer {
+    border-top: var(--red) 7px solid;
+}
