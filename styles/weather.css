@@ -1,5 +1,6 @@
 :root {
     --red: rgb(240, 92, 92);
+    --light-red: rgb(255, 226, 226);
 }
 
 html,
@@ -8,9 +9,17 @@ body {
     font-style: normal;
 }
 
+header {
+    text-align: center;
+}
+
 .hero img {
     width: 100%;
     height: auto;
+}
+
+picture {
+    background-color: var(--red);
 }
 
 section>img {
@@ -18,15 +27,21 @@ section>img {
 }
 
 aside {
-    height: .5rem;
+    height: 1rem;
     background-color: var(--red);
 }
 
+.border-t {
+    border-top: .2rem var(--light-red) solid;
+}
+
 .container {
+    background-color: var(--light-red);
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 2rem 0;
+    margin: 0.5rem;
 }
 
 td:nth-child(1) {
@@ -40,17 +55,60 @@ td:nth-child(2) {
 }
 
 footer {
-    border-top: .5rem solid var(--red);
+    border-top: 1rem solid var(--red);
 }
 
-/* For mobile screens (max-width: 600px) */
-@media (max-width: 600px) {
 
-    .border-t {
-        border-top: 2px rgba(241, 228, 228, 0.452) solid;
+@media (min-width:750px) {
+    main {
+        position: relative;
     }
 
+    h2 {
+        font-size: x-large;
+    }
+
+    .data {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        padding: 1rem;
+        font-size: smaller;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 1.5rem;
+        padding: 1rem;
+        font-size: smaller;
+    }
+
+    /* .container-title {
+        background-color: var(--red);
+        display: flex;
+        align-items: center;
+        position: absolute;
+        left: -1rem;
+        padding: .5rem;
+    } */
+
+    .container-title>img {
+        display: none;
+    }
+
+    .weather h2::after {
+        content: '⛅';
+        position: absolute;
+    }
+
+    header {
+        font-size: x-large;
+    }
 }
 
-/* For large screens (min-width: 1024px) */
-@media (min-width: 1024px) {}
+@media (min-width:700px) {
+    .border-t {
+        border: none;
+    }
+}
