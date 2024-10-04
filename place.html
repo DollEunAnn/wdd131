@@ -4,96 +4,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Responsive Pages">
+    <meta name="description" content="Osaka, Japan">
     <meta name="author" content="Eunice Ann Dollete">
-    <title>Responsive</title>
+    <title>Osaka, Japan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/weather.css">
     <link rel="stylesheet" href="styles/base-layout.css">
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
 </head>
 
 <body>
     <header>
-        <h1>Place</h1>
+        <h1>Osaka, Japan</h1>
     </header>
     <main>
+        <aside></aside>
         <div class="hero">
             <picture>
-                <source media="(min-width: 1000px)" srcset=""> <!-- large -->
-                <img src="images/osaka-castle-small.webp" alt="osaka-castle" width="500" height="250"> <!-- small -->
+                <source media="(min-width: 750px)" srcset="images/osaka-castle-lg.webp"> <!-- large -->
+                <img src="images/osaka-castle-small.webp" alt="Osaka Castle" width="500" height="250"> <!-- small -->
             </picture>
         </div>
-        <div class="container">
-            <div class="container-title">
-                <h2>Data</h2>
-            </div>
-            <div class="container-content">
-                <div class="list">
-                    <table>
-                        <tr>
-                            <td class="label">Area:</td>
-                            <td>225.21 sq km</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Population:</td>
-                            <td>2,753,862</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Capital:</td>
-                            <td>Osaka City</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Languages:</td>
-                            <td>Japanese</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Currency:</td>
-                            <td>Japanese Yen</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Time Zone:</td>
-                            <td>UTC +9</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Calling Code:</td>
-                            <td>06</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Internet TLD:</td>
-                            <td>.osaka</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-        <div class="container border-t">
-            <div class="container-title">
-                <h2>Weather</h2>
-                <img src="/images/weather-sun-cloud.svg" alt="weather-sun-cloud">
-            </div>
-            <div class="container-content">
-                <div class="list">
-                    <table>
-                        <tr>
-                            <td class="label">Temperature:</td>
-                            <td>10 C</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Conditions:</td>
-                            <td>Partly Cloudy</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Winds:</td>
-                            <td>5 km/h</td>
-                        </tr>
-                        <tr>
-                            <td class="label">Windchill:</td>
-                            <td>9.8 C</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
+        <section class="container data">
+            <h2>Data</h2>
+            <table>
+                <tr>
+                    <td class="label">Area:</td>
+                    <td>225.21 sq km</td>
+                </tr>
+                <tr>
+                    <td class="label">Population:</td>
+                    <td>2,753,862</td>
+                </tr>
+                <tr>
+                    <td class="label">Capital:</td>
+                    <td>Osaka City</td>
+                </tr>
+                <tr>
+                    <td class="label">Languages:</td>
+                    <td>Japanese</td>
+                </tr>
+                <tr>
+                    <td class="label">Currency:</td>
+                    <td>Japanese Yen</td>
+                </tr>
+                <tr>
+                    <td class="label">Time Zone:</td>
+                    <td>UTC +9</td>
+                </tr>
+                <tr>
+                    <td class="label">Calling Code:</td>
+                    <td>06</td>
+                </tr>
+                <tr>
+                    <td class="label">Internet TLD:</td>
+                    <td>.osaka</td>
+                </tr>
+            </table>
+        </section>
+        <section class="container weather border-t">
+            <h2>Weather</h2>
+            <img src="/images/weather-sun-cloud.svg" alt="weather-sun-cloud">
+            <table>
+                <tr>
+                    <td class="label">Temperature:</td>
+                    <td>10 C</td>
+                </tr>
+                <tr>
+                    <td class="label">Conditions:</td>
+                    <td>Partly Cloudy</td>
+                </tr>
+                <tr>
+                    <td class="label">Winds:</td>
+                    <td>5 km/h</td>
+                </tr>
+                <tr>
+                    <td class="label">Windchill:</td>
+                    <td>9.8 C</td>
+                </tr>
+            </table>
+        </section>
     </main>
     <footer>
         <p>© <span id="currentyear"></span> Eunice Ann Dollete - Philippines</p>

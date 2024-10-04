@@ -12,25 +12,21 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    font-family: "Urbanist", system-ui;
-    min-height: 100vh;
+    justify-content: space-between;
 }
 
 header {
-    /* background-color: var(--red); */
     color: var(--red);
 }
 
 header>h1 {
     display: flex;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 main {
     flex: 1;
     justify-content: center;
-    /* margin: 0 auto; */
-    /* padding: 2rem; */
 }
 
 
