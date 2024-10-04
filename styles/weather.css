@@ -84,14 +84,9 @@ footer {
         font-size: smaller;
     }
 
-    /* .container-title {
-        background-color: var(--red);
-        display: flex;
-        align-items: center;
-        position: absolute;
-        left: -1rem;
-        padding: .5rem;
-    } */
+    h2 {
+        margin-bottom: .5rem;
+    }
 
     .container-title>img {
         display: none;
@@ -99,7 +94,6 @@ footer {
 
     .weather h2::after {
         content: '⛅';
-        position: absolute;
     }
 
     header {
