@@ -122,25 +122,25 @@ footer p {
     border-radius: 1rem;
     padding: 1.5rem;
     text-align: center;
+}
 
-    h3 {
-        font-size: x-large;
-        font-weight: bold;
-        padding: 1rem 0;
-    }
+.card>h3 {
+    font-size: x-large;
+    font-weight: bold;
+    padding: 1rem 0;
+}
 
-    img {
-        width: 100%;
-        min-height: auto;
-        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-        margin: 1rem 0 0 0;
-    }
+.card>img {
+    width: 100%;
+    min-height: auto;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin: 1rem 0 0 0;
+}
 
-    p {
-        flex-grow: 1;
-    }
+.card>p {
+    flex-grow: 1;
+}
 
-    span {
-        font-weight: bold;
-    }
+.card>span {
+    font-weight: bold;
 }

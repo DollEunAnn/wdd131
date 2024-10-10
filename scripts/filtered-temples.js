@@ -100,18 +100,12 @@ function showTemple(temples) {
 
 showTemple(temples);
 
-// filtering temples
-function filterOldTemples() {
-    // [array].filter([individual item inside temple] => [convert to date].getFullYear [< condition])
-    return temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
-}
-
 document.querySelector("#home").addEventListener("click", () => {
     showTemple(temples);
-
 });
 
 document.querySelector("#old").addEventListener("click", () => {
+    // [array].filter([individual item inside temple] => [convert to date].getFullYear [< condition])
     let oldTemple = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
     showTemple(oldTemple);
 });
