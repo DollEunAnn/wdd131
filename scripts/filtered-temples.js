@@ -87,7 +87,7 @@ function templeCard(temple) {
                 <p><span> Location: </span> ${temple.location}</p>
                 <p><span> Dedicated: </span> ${temple.dedicated}</p>
                 <p><span> Area: </span> ${temple.area}</p>
-                <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" width="400" min-height="auto" />
+                <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" width="400" min-height="250" />
             </div>`;
 }
 
