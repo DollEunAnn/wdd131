@@ -56,60 +56,83 @@ const temples = [
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg"
     },
     {
-        templeName: "Manila Philippines Temple",
+        templeName: "Manila Philippines",
         location: "Manila, Philippines",
         dedicated: "1984, September, 25",
-        area: 1980,
+        area: 26683,
         imageUrl:
             "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/800x500/manila-philippines-temple-lds-129585-wallpaper.jpg"
     },
     {
-        templeName: "Manila Philippines Temple",
-        location: "Manila, Philippines",
-        dedicated: "1984, September, 25",
-        area: 1980,
-        imageUrl:
-            "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/manila-philippines/800x500/manila-philippines-temple-lds-129585-wallpaper.jpg"
-    },
-    {
-        templeName: "Laie Hawaii Temple",
+        templeName: "Laie Hawaii",
         location: "Laie, Hawaii",
         dedicated: "1919, November, 27",
-        area: "42000",
+        area: "42100",
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/laie-hawaii/800x500/laie-temple-775368-wallpaper.jpg"
     },
     {
-        templeName: "Calgary Alberta Temple",
+        templeName: "Calgary Alberta",
         location: "Calgary, Alberta, Canada",
         dedicated: "2012, October, 28",
-        area: "88562",
+        area: "440827",
         imageUrl: "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/calgary-alberta/800x500/calgary-alberta-temple-lds-1025065-wallpaper.jpg"
     }
 ];
 
 // Loop through the array and create "temple cards" for each temple by displaying
 function templeCard(temple) {
-    return ` <div class="container">
-            <!-- 1 -->
+    return ` 
             <div class="card">
-                <h3>${temple.name}</h3>
-                <p>Location:</p>
-                <p>Dedicated:</p>
-                <p>Area:</p>
-                <img src="images/manila-philippines-temple.jpg" loading="lazy" alt="temple" width="400" height="250" />
-            </div>
-        </div>`;
+                <h3>${temple.templeName}</h3>
+                <p><span> Location: </span> ${temple.location}</p>
+                <p><span> Dedicated: </span> ${temple.dedicated}</p>
+                <p><span> Area: </span> ${temple.area}</p>
+                <img src="${temple.imageUrl}" loading="lazy" alt="${temple.templeName}" width="400" min-height="auto" />
+            </div>`;
 }
 
+// mapped on html
 function showTemple(temples) {
-    const mainContainer = document.querySelector('#main');
-    const templeCard = temples.map(templeCard).join("");
-    mainContainer.innerHTML = templeCard;
+    const mainContainer = document.querySelector('#container');
+    const templeCards = temples.map(templeCard).join("");
+    mainContainer.innerHTML = templeCards;
 }
-
-console.log(temples);
 
 showTemple(temples);
+
+// filtering temples
+function filterOldTemples() {
+    // [array].filter([individual item inside temple] => [convert to date].getFullYear [< condition])
+    return temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+}
+
+document.querySelector("#home").addEventListener("click", () => {
+    showTemple(temples);
+
+});
+
+document.querySelector("#old").addEventListener("click", () => {
+    let oldTemple = temples.filter(temple => new Date(temple.dedicated).getFullYear() < 1900);
+    showTemple(oldTemple);
+});
+
+document.querySelector("#new").addEventListener("click", () => {
+    let newTemple = temples.filter(temple => new Date(temple.dedicated).getFullYear() > 2000);
+    showTemple(newTemple);
+});
+
+document.querySelector("#large").addEventListener("click", () => {
+    let largeTemple = temples.filter(temple => temple.area > 90000);
+    showTemple(largeTemple);
+});
+
+
+document.querySelector("#small").addEventListener("click", () => {
+    let smallTemple = temples.filter(temple => temple.area < 10000);
+    showTemple(smallTemple);
+});
+
+
 
 // get the hamburger icon element
 const hamburgerIcon = document.getElementById('hamburger');

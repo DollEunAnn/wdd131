@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Temple Album</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Picture Album - Temples">
+    <meta name="author" content="Eunice Ann Dollete">
+    <link rel="stylesheet" href="styles/filtered-temple.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1 class="title-font">Temple Album</h1>
+        <button type="button" id="hamburger" aria-label="hamburger-menu"></button>
+        <!-- Hidden on mobile -->
+        <nav id="navMenu">
+            <a href="#" id="home">Home</a>
+            <a href="#" id="old">Old</a>
+            <a href="#" id="new">New</a>
+            <a href="#" id="large">Large</a>
+            <a href="#" id="small">Small</a>
+        </nav>
+    </header>
+    <main>
+        <h2 class="title-font mb-2rem">Home</h2>
+        <div class="container" id="container">
+
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Eunice Ann Dollete - Philippines</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>
