@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0a2e00;
+    --background-color: #daedc3;
+}
+
+
+body {
+    font-family: "Inter", sans-serif;
+    /* text-align: center; */
+    background-color: var(--background-color);
+}
+
+main {
+    border: 2px solid var(--primary-color);
+    border-radius: 2rem;
+    border-style: dashed;
+    margin: auto 5rem;
+    padding: 2rem;
+}
+
+header {
+    text-align: center;
+}
+
+h1,
+h2 {
+    font-family: "Bricolage Grotesque", sans-serif;
+    padding: 2rem 0;
+}
+
+.stacked {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    /* Ensure images align at the top */
+}
+
+.stacked img {
+    max-width: 50%;
+    /* Set a max-width to prevent stretching */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    margin-bottom: 10px;
+}
+
+.stacked span {
+    display: block;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.color-block {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+}
+
+.color-square-1 {
+    width: 50px;
+    height: 50px;
+    background-color: #0a2e00;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.color-square-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #ffa400;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.color-square-3 {
+    width: 50px;
+    height: 50px;
+    background-color: #ffffde;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+.color-square-4 {
+    width: 50px;
+    height: 50px;
+    background-color: #0a2e00;
+    margin: 0.5rem;
+    margin-left: 0;
+}
+
+
+.color-block span {
+    font-size: 16px;
+    color: #000;
+    /* Adjust text color as needed */
+}
+
+.h-font {
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+.p-font {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: larger;
+}
+
+/* footer */
+footer {
+    padding: 2rem;
+    text-align: center;
+    font-size: small;
+}
+
+footer p {
+    font-weight: 500;
+}
