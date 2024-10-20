@@ -110,6 +110,12 @@ legend {
 }
 
 
+@-moz-document url-prefix() {
+    .star-rating input:checked~label:before {
+        font-size: 36px;
+        line-height: 21px;
+    }
+}
 
 /* star rating */
 /* use reverse flexbox to take advantage of flex-direction: reverse */
@@ -159,11 +165,4 @@ legend {
 /* set full star shape for checked label and those that come after it */
 .star-rating input:checked~label:before {
     content: '\2605';
-}
-
-@-moz-document url-prefix() {
-    .star-rating input:checked~label:before {
-        font-size: 36px;
-        line-height: 21px;
-    }
 }
