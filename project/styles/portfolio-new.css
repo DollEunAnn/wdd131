@@ -9,6 +9,7 @@
     --background-color: #daedc3;
     --accent-color: #ffa400;
     --typography-color: #0a2e00;
+    --off-white: #ffffde;
 }
 
 html,
@@ -101,6 +102,7 @@ h3 {
     width: 100%;
     overflow: hidden;
     background-color: var(--accent-color);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card-item img {
@@ -112,6 +114,20 @@ h3 {
 /* separte per row with 50 - 80 padding */
 .container {
     padding: 50px 2rem;
+}
+
+/* connect links */
+.connect-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-items: center;
+}
+
+.connect-links a {
+    color: var(--typography-color);
+    text-decoration: none;
+
 }
 
 /* for transparent scrolling */
