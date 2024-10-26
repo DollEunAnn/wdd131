@@ -8,7 +8,6 @@ window.addEventListener('scroll', function () {
         header.classList.add('scrolled');
         nav.classList.add('scrolled');
     } else {
-        console.log('false');
         header.classList.remove('scrolled');
         nav.classList.remove('scrolled');
     }
@@ -21,7 +20,6 @@ const currentLink = window.location.pathname;
 navLinks.forEach(link => {
 
     if (currentLink.includes(link.getAttribute('href'))) {
-        console.log(link);
         link.classList.add('active');
     }
 

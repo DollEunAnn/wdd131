@@ -8,7 +8,6 @@
 }
 
 
-
 .subtitle {
     text-align: left;
     font-size: x-large;
@@ -18,6 +17,24 @@
 .paragraph {
     text-align: left;
     font-size: small;
+    margin: 1rem 0;
+}
+
+/* unit.container */
+#unit-container {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: flex;
+    padding: .2rem 0;
+}
+
+input[type="radio"] {
+    background-color: red;
+    padding-top: 2px;
+    margin-left: 3px;
 }
 
 /* grid images */
@@ -49,7 +66,7 @@
 }
 
 @media screen and (max-width: 650px) {
-    .container {
+    .container-image {
         display: block;
     }
 

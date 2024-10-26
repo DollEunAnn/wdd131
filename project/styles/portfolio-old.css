@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #0a2e00;
+    --background-color: #daedc3;
+    --accent-color: #ffa400;
+}
+
+/* layout body */
+html,
+body {
+    /* background-color: var(--background-color); */
+    height: 100%;
+}
+
+header {
+    /* background-color: pink; */
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem auto;
+    width: 50vw;
+    background-color: antiquewhite;
+    padding: .7rem 1rem;
+    border-radius: 1.5rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main {
+    flex: 1;
+    justify-content: center;
+}
+
+/* hero */
+.hero {
+    /* min-height: 30%; */
+    background-color: #ffa400;
+}
+
+.hero h1 {
+    font-size: xx-large;
+}
+
+/* card */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-item {
+    height: 200px;
+    border: 1px red solid;
+    border-radius: .7rem;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* separte per row with 50 - 80 padding */
+.container {
+    padding: 50px 2rem;
+}
+
+/* footer */
+footer {
+    background-color: pink;
+    padding: .5rem;
+    text-align: center;
+    font-size: small;
+    align-self: flex-end;
+}
+
+footer p {
+    font-weight: 500;
+}
