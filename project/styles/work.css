@@ -23,8 +23,11 @@
 }
 
 .card-item a {
-    text-decoration: none;
+    color: var(--typography-color);
+    text-decoration: underline;
 }
+
+
 
 /* large screens (ipad / deskstop) */
 @media screen and (min-width: 750px) {
