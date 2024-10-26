@@ -25,3 +25,19 @@
 .card-item a {
     text-decoration: none;
 }
+
+/* large screens (ipad / deskstop) */
+@media screen and (min-width: 750px) {
+    .hero h1 {
+        font-size: 10rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 50%;
+        gap: 1rem;
+    }
+
+}

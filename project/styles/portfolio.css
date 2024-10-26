@@ -53,7 +53,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     margin: .5rem auto;
-    width: auto;
+    width: 60%;
     background-color: var(--background-color);
     padding: .7rem 1rem;
     border-radius: 1.5rem;
@@ -72,7 +72,7 @@ nav a {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 .hero p {
@@ -92,6 +92,8 @@ select {
 /* separte per row with 50 - 80 padding */
 .container {
     padding: 50px 2rem;
+    margin: auto;
+    text-align: center;
 }
 
 /* connect links */
@@ -117,7 +119,7 @@ select {
 /* for transparent scrolling */
 .header.scrolled {
     background-color: transparent;
-    color: white;
+    color: var(--background-color);
 }
 
 .nav.scrolled {
